@@ -16,7 +16,7 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " hide buffers insteade of close
 set hidden
 
-set nowrap			" don't wrap lines
+set wrap			" do wrap lines
 set tabstop=4	    " a tab is 4 spaces
 set backspace=eol,start,indent
 					" allow backspacing over everything in insert mode
