@@ -18,6 +18,8 @@ set hidden
 
 set wrap			" do wrap lines
 set tabstop=4	    " a tab is 4 spaces
+set softtabstop=4	" a tab is 4 spaces in insert mode
+set smarttab		" force replace tabs w/ spaces
 set backspace=eol,start,indent
 					" allow backspacing over everything in insert mode
 set autoindent
