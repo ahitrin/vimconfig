@@ -28,3 +28,20 @@ snippet cl
 	private:
 		${3:/* data */}
 	};
+# google test suite
+snippet gtsuite
+	#include "gtest/gtest.h"
+	
+	namespace
+	{
+	class ${1:`Filename('', 'name')`} : public ::testing::Test
+	{
+	};
+	
+	}
+# google test sample
+snippet gtest
+	TEST(${1:`Filename('','name')`}, ${2:testName})
+	{
+		
+	}
