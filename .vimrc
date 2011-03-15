@@ -16,40 +16,40 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " hide buffers insteade of close
 set hidden
 
-set wrap			" do wrap lines
-set tabstop=4	    " a tab is 4 spaces
-set softtabstop=4	" a tab is 4 spaces in insert mode
-set expandtab		" force replace tabs w/ spaces
+set wrap            " do wrap lines
+set tabstop=4       " a tab is 4 spaces
+set softtabstop=4   " a tab is 4 spaces in insert mode
+set expandtab       " force replace tabs w/ spaces
 set backspace=eol,start,indent
-					" allow backspacing over everything in insert mode
+                    " allow backspacing over everything in insert mode
 set autoindent
-set copyindent	    " copy previous indentation
-set number			" always show line numbers
-set shiftwidth=4	" number of spaces used for autoindenting
-set shiftround	    " use multiple of shiftwidth when indenting with '<' and '>'
-set showmatch	    " set show matching parenthesis
-set ignorecase	    " ignore case when searching
-set smartcase	    " ignore case if search pattern is all lowercase, case-sensitive otherwise
-set smarttab	    " insert tabs on the start of a line according to shiftwidth, not tabstop
-set hlsearch	    " highlight search results
-set incsearch	    " show search matches as you type
+set copyindent      " copy previous indentation
+set number          " always show line numbers
+set shiftwidth=4    " number of spaces used for autoindenting
+set shiftround      " use multiple of shiftwidth when indenting with '<' and '>'
+set showmatch       " set show matching parenthesis
+set ignorecase      " ignore case when searching
+set smartcase       " ignore case if search pattern is all lowercase, case-sensitive otherwise
+set smarttab        " insert tabs on the start of a line according to shiftwidth, not tabstop
+set hlsearch        " highlight search results
+set incsearch       " show search matches as you type
 
-set history=1000	" loooong history
-set undolevels=1000	" loooong levels
-set title			" change the terminal's title
-"set visualbell		" don't beep
-"set noerrorbells	" don't beep
+set history=1000    " loooong history
+set undolevels=1000 " loooong levels
+set title           " change the terminal's title
+"set visualbell     " don't beep
+"set noerrorbells   " don't beep
 
-set nobackup		" NO BACKUPS!!! (leave it in the 70's)
-set noswapfile		" swap is obsolete!
+set nobackup        " NO BACKUPS!!! (leave it in the 70's)
+set noswapfile      " swap is obsolete!
 
 if &t_Co >= 256 || has("gui_running")
-	colorscheme mustang
-	"colorscheme desert 	" old
+    colorscheme mustang
+    "colorscheme desert     " old
 endif
 
 if &t_Co > 2 || has("gui_running")
-	syntax on
+    syntax on
 endif
 
 " whitespaces
