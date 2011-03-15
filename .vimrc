@@ -25,6 +25,7 @@ set backspace=eol,start,indent
 set autoindent
 set copyindent      " copy previous indentation
 set number          " always show line numbers
+set ruler           " show cursor coordinates and file position
 set shiftwidth=4    " number of spaces used for autoindenting
 set shiftround      " use multiple of shiftwidth when indenting with '<' and '>'
 set showmatch       " set show matching parenthesis
@@ -43,9 +44,10 @@ set title           " change the terminal's title
 set nobackup        " NO BACKUPS!!! (leave it in the 70's)
 set noswapfile      " swap is obsolete!
 
+set diffopt=vertical
+
 if &t_Co >= 256 || has("gui_running")
     colorscheme mustang
-    "colorscheme desert     " old
 endif
 
 if &t_Co > 2 || has("gui_running")
@@ -81,7 +83,3 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 " call sudo to modify root's files after opening
 cmap w!! w !sudo tee % >/dev/null
-
-" my custom config
-set ruler
-set diffopt=vertical
