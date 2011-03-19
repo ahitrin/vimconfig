@@ -38,6 +38,7 @@ set incsearch       " show search matches as you type
 set history=1000    " loooong history
 set undolevels=1000 " loooong levels
 set title           " change the terminal's title
+set guioptions-=T   " remove tools panel in GVim
 "set visualbell     " don't beep
 "set noerrorbells   " don't beep
 
