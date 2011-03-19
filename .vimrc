@@ -39,6 +39,8 @@ set history=1000    " loooong history
 set undolevels=1000 " loooong levels
 set title           " change the terminal's title
 set guioptions-=T   " remove tools panel in GVim
+set guioptions-=L   " remove left scrollbar in GVim
+set guioptions-=r   " remove right scrollbar in GVim
 "set visualbell     " don't beep
 "set noerrorbells   " don't beep
 
