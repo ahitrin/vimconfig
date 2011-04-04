@@ -49,3 +49,8 @@ rainbow_parenthsis-commands	rainbow_parenthsis.txt	/*rainbow_parenthsis-commands
 rainbow_parenthsis-configure	rainbow_parenthsis.txt	/*rainbow_parenthsis-configure*
 rainbow_parenthsis-functions	rainbow_parenthsis.txt	/*rainbow_parenthsis-functions*
 rainbow_parenthsis.txt	rainbow_parenthsis.txt	/*rainbow_parenthsis.txt*
+xml-plugin-callbacks	xml-plugin.txt	/*xml-plugin-callbacks*
+xml-plugin-html	xml-plugin.txt	/*xml-plugin-html*
+xml-plugin-mappings	xml-plugin.txt	/*xml-plugin-mappings*
+xml-plugin-settings	xml-plugin.txt	/*xml-plugin-settings*
+xml-plugin.txt	xml-plugin.txt	/*xml-plugin.txt*
