@@ -47,15 +47,13 @@ set guioptions-=r   " remove right scrollbar in GVim
 
 set nobackup        " NO BACKUPS!!! (leave it in the 70's)
 set noswapfile      " swap is obsolete!
+syntax on           " always check & highlight syntax
+filetype plugin on  " load filetype plugins
 
 set diffopt=vertical
 
 if &t_Co >= 256 || has("gui_running")
     colorscheme mustang
-endif
-
-if &t_Co > 2 || has("gui_running")
-    syntax on
 endif
 
 " whitespaces
