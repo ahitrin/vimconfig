@@ -32,6 +32,7 @@ set showmatch       " set show matching parenthesis
 set ignorecase      " ignore case when searching
 set smartcase       " ignore case if search pattern is all lowercase, case-sensitive otherwise
 set smarttab        " insert tabs on the start of a line according to shiftwidth, not tabstop
+set smartindent     " auto indentation on {} symbols in C and so on
 set hlsearch        " highlight search results
 set incsearch       " show search matches as you type
 
