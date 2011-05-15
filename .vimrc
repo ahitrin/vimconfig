@@ -50,6 +50,9 @@ set noswapfile      " swap is obsolete!
 syntax on           " always check & highlight syntax
 filetype plugin on  " load filetype plugins
 
+" workaround: manually set up clojure filetype (why it is not auto loaded?)
+au BufRead,BufNewFile *.clj set filetype=clojure
+
 set diffopt=vertical
 
 if &t_Co >= 256 || has("gui_running")
