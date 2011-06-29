@@ -63,6 +63,9 @@ endif
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
+" keymap
+set keymap=russian-jcukenwin
+set iminsert=0
 " useful keybindings
 set pastetoggle=<F2>
 " HELL YEAH!
