@@ -76,8 +76,6 @@ nmap Q gqap
 " long lines walking
 nnoremap j gj
 nnoremap k gk
-" insert timestamp
-nnoremap <F5> "=strftime("%c")<CR>P
 " well, not for today ;)
 map <up> <nop>
 map <down> <nop>
