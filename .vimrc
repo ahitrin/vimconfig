@@ -56,7 +56,7 @@ au BufRead,BufNewFile *.clj set filetype=clojure
 set diffopt=vertical
 
 if &t_Co >= 256 || has("gui_running")
-    colorscheme mustang
+    colorscheme desert
 endif
 
 " whitespaces
