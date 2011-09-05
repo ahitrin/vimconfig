@@ -22,7 +22,6 @@ set softtabstop=4   " a tab is 4 spaces in insert mode
 set expandtab       " force replace tabs w/ spaces
 set backspace=eol,start,indent
                     " allow backspacing over everything in insert mode
-set autoindent
 set copyindent      " copy previous indentation
 set number          " always show line numbers
 set ruler           " show cursor coordinates and file position
