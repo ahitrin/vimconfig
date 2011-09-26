@@ -1,5 +1,7 @@
 " see http://nvie.com/posts/how-i-boosted-my-vim/
 set nocompatible
+" Set author's name for SnipMate plugin
+let g:snips_author = 'Andrey Hitrin'
 
 "Use pathogen to easily modify the runtime path to include all plugins under ~/.vim/bundle directory
 call pathogen#helptags()
