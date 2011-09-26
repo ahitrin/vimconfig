@@ -77,16 +77,11 @@ snippet cos
 snippet as
 	assert ${1:test} : "${2:Failure message}";${3}
 snippet junittest
-	package .
-	
 	import static org.hamcrest.CoreMatchers.*;
 	import static org.junit.Assert.*;
 	
 	import org.junit.Test;
 	
-	/*
-	 * @author ahitrin
-	 */
 	public class ${1:`Filename()`}
 	{
 		@Test
