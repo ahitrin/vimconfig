@@ -3,6 +3,8 @@ snippet main
 	{
 		${1:/* code */}
 	}
+snippet pa
+	package
 snippet pu
 	public
 snippet po
@@ -90,5 +92,7 @@ snippet junittest
 			assertThat( true, is(true) );
 		}
 	}
+snippet at
+	assertThat( ${1}, ${2:is} );${3}
 snippet LOG
 	private static final Logger LOG = Logger.getLogger( ${1:`Filename()`}.class );
