@@ -3,6 +3,11 @@ snippet main
 	{
 		${1:/* code */}
 	}
+snippet doc
+	/*
+	 * @author ${1:`g:snips_author`}
+	 * @since ${2:`strftime("%d-%m-%Y")`}
+	 */
 snippet pa
 	package
 snippet pu
@@ -68,6 +73,10 @@ snippet cl
 	class ${1:`Filename("", "untitled")`} ${2}
 snippet in
 	interface ${1:`Filename("", "untitled")`} ${2:extends Parent}${3}
+snippet ex
+	extends
+snippet imp
+	implements
 snippet m
 	${1:void} ${2:method}( ${3} ) ${4:throws }${5}
 snippet v
