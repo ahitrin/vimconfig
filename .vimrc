@@ -77,6 +77,10 @@ nmap Q gqap
 " long lines walking
 nnoremap j gj
 nnoremap k gk
+" easy work with buffers
+nnoremap <silent> <M-F12> :BufExplorer<CR>
+nnoremap <silent> <F12> :bn<CR>
+nnoremap <silent> <S-F12> :bp<CR>
 " well, not for today ;)
 map <up> <nop>
 map <down> <nop>
