@@ -4,8 +4,8 @@ set nocompatible
 let g:snips_author = 'Andrey Hitrin'
 
 "Use pathogen to easily modify the runtime path to include all plugins under ~/.vim/bundle directory
+call pathogen#infect()
 call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
 
 " change mapleader from \ to ,
 " http://dailyvim.blogspot.com/2008/11/using-mapleader.html
