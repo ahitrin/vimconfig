@@ -3,6 +3,8 @@ set nocompatible
 " Set author's name for SnipMate plugin
 let g:snips_author = 'Andrey Hitrin'
 
+set tags=./tags,./TAGS,tags,TAGS,~/src/*/tags
+
 "Use pathogen to easily modify the runtime path to include all plugins under ~/.vim/bundle directory
 call pathogen#infect()
 call pathogen#helptags()
