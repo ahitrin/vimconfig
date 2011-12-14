@@ -22,6 +22,8 @@ SourceLookupInteractive	clojure.txt	/*SourceLookupInteractive*
 SourceLookupWord	clojure.txt	/*SourceLookupWord*
 StartLocalRepl	clojure.txt	/*StartLocalRepl*
 StartRepl	clojure.txt	/*StartRepl*
+ToggleParenRainbow	clojure.txt	/*ToggleParenRainbow*
+^	clojure.txt	/*^*
 aw	clojure.txt	/*aw*
 clj-nailgun-server	clojure.txt	/*clj-nailgun-server*
 clojure.vim	clojure.txt	/*clojure.vim*
@@ -31,6 +33,7 @@ el	clojure.txt	/*el*
 ep	clojure.txt	/*ep*
 et	clojure.txt	/*et*
 fd	clojure.txt	/*fd*
+ft-clj-indent	clojure.txt	/*ft-clj-indent*
 ft-clj-syntax	clojure.txt	/*ft-clj-syntax*
 gi	clojure.txt	/*gi*
 gw	clojure.txt	/*gw*
@@ -49,4 +52,5 @@ sR	clojure.txt	/*sR*
 si	clojure.txt	/*si*
 sr	clojure.txt	/*sr*
 sw	clojure.txt	/*sw*
+tr	clojure.txt	/*tr*
 vimclojure.txt	clojure.txt	/*vimclojure.txt*
