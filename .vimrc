@@ -77,9 +77,6 @@ nnoremap ; :
 " paragraph reformat
 vmap Q gq
 nmap Q gqap
-" long lines walking
-nnoremap j gj
-nnoremap k gk
 " easy work with buffers
 nnoremap <silent> <M-F12> :BufExplorer<CR>
 nnoremap <silent> <F12> :bn<CR>
