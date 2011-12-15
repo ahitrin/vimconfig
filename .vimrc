@@ -6,9 +6,6 @@ let g:snips_author = 'Andrey Hitrin'
 " Use tags from third-party libraries located in ~/src
 set tags=./tags,./TAGS,tags,TAGS,~/src/*/tags
 
-" Toggle show/hide tags list for current file (taglist plugin)
-nnoremap <silent> <F8> :TlistToggle<CR>
-
 "Use pathogen to easily modify the runtime path to include all plugins under ~/.vim/bundle directory
 call pathogen#infect()
 call pathogen#helptags()
