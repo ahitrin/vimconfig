@@ -22,6 +22,7 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 set hidden
 
 set wrap            " do wrap lines
+set linebreak       " and break looooooooooooooong lines
 set tabstop=4       " a tab is 4 spaces
 set softtabstop=4   " a tab is 4 spaces in insert mode
 set expandtab       " force replace tabs w/ spaces
