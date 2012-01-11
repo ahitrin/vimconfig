@@ -63,7 +63,7 @@ au BufRead,BufNewFile *.clj set filetype=clojure
 set diffopt=vertical
 
 " whitespaces
-set list
+set list            " show whitespaces and other symbols
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 " keymap
