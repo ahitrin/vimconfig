@@ -3,6 +3,8 @@ set nocompatible
 " Set author's name for SnipMate plugin
 let g:snips_author = 'Andrey Hitrin'
 
+colorscheme desert
+
 " Use tags from third-party libraries located in ~/src
 set tags=./tags,./TAGS,tags,TAGS,~/src/*/tags,/usr/include/tags
 
@@ -60,12 +62,8 @@ au BufRead,BufNewFile *.clj set filetype=clojure
 
 set diffopt=vertical
 
-if &t_Co >= 256 || has("gui_running")
-    colorscheme desert
-endif
-
 " whitespaces
-set list
+set list            " show whitespaces and other symbols
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 " keymap
