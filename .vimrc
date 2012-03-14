@@ -66,9 +66,6 @@ set diffopt=vertical
 set list            " show whitespaces and other symbols
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
-" keymap
-set keymap=russian-jcukenwin
-set iminsert=0
 " HELL YEAH!
 nnoremap ; :
 " paragraph reformat
