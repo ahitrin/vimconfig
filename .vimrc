@@ -49,8 +49,11 @@ set title           " change the terminal's title
 set guioptions-=T   " remove tools panel in GVim
 set guioptions-=L   " remove left scrollbar in GVim
 set guioptions-=r   " remove right scrollbar in GVim
-"set visualbell     " don't beep
-"set noerrorbells   " don't beep
+set guioptions-=m   " remove menu in GVim
+
+if has('gui_running')
+    set guifont=Ubuntu\ Mono\ 10
+endif
 
 set nobackup        " NO BACKUPS!!! (leave it in the 70's)
 set noswapfile      " swap is obsolete!
