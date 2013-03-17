@@ -50,6 +50,7 @@ set guioptions-=T   " remove tools panel in GVim
 set guioptions-=L   " remove left scrollbar in GVim
 set guioptions-=r   " remove right scrollbar in GVim
 set guioptions-=m   " remove menu in GVim
+set spelllang=ru_yo,en_us   " spellcheck: Russian with Ё, and English
 
 if has('gui_running')
     set guifont=Ubuntu\ Mono\ 10
