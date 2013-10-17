@@ -11,3 +11,13 @@ Quickly install by:
 
  * git clone git://github.com/mfukar/robotframework-vim.git
  * cd robotframework-vim && cp -R * ~/.vim/
+
+USAGE
+------------------------------------------
+ * To enable syntax highlighting in vim, you may add this line at the beginning
+   of a Robot Framework file(s):
+
+    `# -*- coding: robot -*-`
+
+Alternatively, set the g:robot_syntax_for_txt global variable to treat .txt
+files as Robot files.
