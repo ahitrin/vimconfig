@@ -2,6 +2,8 @@
 set nocompatible
 " Set author's name for SnipMate plugin
 let g:snips_author = 'Andrey Hitrin'
+" vim-slime setup
+let g:slime_target = "tmux"
 
 colorscheme desert
 
