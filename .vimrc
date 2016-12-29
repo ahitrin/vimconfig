@@ -82,13 +82,6 @@ nmap Q gqap
 nnoremap <silent> <F9> :BufExplorer<CR>
 nnoremap <silent> <F12> :bn<CR>
 nnoremap <silent> <S-F12> :bp<CR>
-" well, not for today ;)
-map <up> :echo "Press k"<CR>
-map <down> :echo "Press j"<CR>
-map <left> :echo "Press h"<CR>
-map <right> :echo "Press l"<CR>
-map <PageUp> :echo "Press ^B or ^Y to scroll up"<CR>
-map <PageDown> :echo "Press ^F or ^E to scroll down"<CR>
 " easy window navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
