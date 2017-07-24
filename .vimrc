@@ -5,8 +5,6 @@ let g:snips_author = 'Andrey Hitrin'
 " vim-slime setup
 let g:slime_target = "tmux"
 
-colorscheme desert
-
 " Use tags from third-party libraries located in ~/src
 set tags=./tags,./TAGS,tags,TAGS,~/src/*/tags,/usr/include/tags
 
@@ -93,3 +91,6 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 " call sudo to modify root's files after opening
 cmap w!! w !sudo tee % >/dev/null
+
+set background=light
+colorscheme solarized
