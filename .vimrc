@@ -20,6 +20,9 @@ let mapleader=","
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" quickly save current buffer and return to edit
+nmap <leader>z :wa<CR>i
+
 " hide buffers insteade of close
 set hidden
 
