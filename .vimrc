@@ -58,7 +58,10 @@ set spelllang=ru_yo,en_us   " spellcheck: Russian with Ё, and English
 
 if has('gui_running')
     set guifont=Ubuntu\ Mono\ 9
-    colorscheme jellybeans
+    set background=dark
+    colorscheme solarized
+else
+    colorscheme desert
 endif
 
 set nobackup        " NO BACKUPS!!! (leave it in the 70's)
@@ -94,6 +97,3 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 " call sudo to modify root's files after opening
 cmap w!! w !sudo tee % >/dev/null
-
-set background=light
-colorscheme solarized
