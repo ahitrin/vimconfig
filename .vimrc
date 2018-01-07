@@ -58,11 +58,8 @@ set spelllang=ru_yo,en_us   " spellcheck: Russian with Ё, and English
 
 if has('gui_running')
     set guifont=Ubuntu\ Mono\ 9
-    set background=dark
-    colorscheme solarized
-else
-    colorscheme desert
 endif
+colorscheme desert
 
 set nobackup        " NO BACKUPS!!! (leave it in the 70's)
 set noswapfile      " swap is obsolete!
