@@ -57,7 +57,7 @@ set guioptions-=m   " remove menu in GVim
 set spelllang=ru_yo,en_us   " spellcheck: Russian with Ё, and English
 
 if has('gui_running')
-    set guifont=Ubuntu\ Mono\ 9
+    set guifont=Ubuntu\ Mono\ 11
     colorscheme solarized
     set background=light
 else
