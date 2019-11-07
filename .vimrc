@@ -23,9 +23,8 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " quickly save current buffer and return to edit
 nmap <leader>z :wa<CR>i
 
-" hide buffers insteade of close
-set hidden
-
+set autoread        " reload changed file without askin'
+set hidden          " hide buffers insteade of close
 set wrap            " do wrap lines
 set linebreak       " and break looooooooooooooong lines
 set tabstop=4       " a tab is 4 spaces
