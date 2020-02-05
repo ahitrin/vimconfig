@@ -94,3 +94,6 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 " call sudo to modify root's files after opening
 cmap w!! w !sudo tee % >/dev/null
+
+" wrappers against my custom tools
+command Braindump :edit `braindump -n`
