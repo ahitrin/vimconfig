@@ -97,3 +97,7 @@ cmap w!! w !sudo tee % >/dev/null
 
 " wrappers against my custom tools
 command Braindump :edit `braindump -n`
+command Journal :edit `journal -n`
+command Myplan :edit `myplan -n`
+command Techlog :edit `techlog -n`
+command Workplan :edit `workplan -n`
