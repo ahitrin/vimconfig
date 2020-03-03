@@ -96,8 +96,8 @@ nmap <silent> ,/ :nohlsearch<CR>
 cmap w!! w !sudo tee % >/dev/null
 
 " wrappers against my custom tools
-command Braindump :edit `braindump -n`
-command Journal :edit `journal -n`
-command Myplan :edit `myplan -n`
-command Techlog :edit `techlog -n`
-command Workplan :edit `workplan -n`
+command Braindump :edit `~/projects/ideas/bin/braindump -n`
+command Journal :edit `~/projects/ideas/bin/journal -n`
+command Myplan :edit `~/projects/ideas/bin/myplan -n`
+command Techlog :edit `~/projects/ideas/bin/techlog -n`
+command Workplan :edit `~/projects/ideas/bin/workplan -n`
