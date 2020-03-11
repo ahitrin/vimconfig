@@ -98,6 +98,8 @@ cmap w!! w !sudo tee % >/dev/null
 " wrappers against my custom tools
 command Braindump :edit `~/projects/ideas/bin/braindump -n`
 command Journal :edit `~/projects/ideas/bin/journal -n`
+command Monthly :edit `~/projects/ideas/bin/monthly -n`
 command Myplan :edit `~/projects/ideas/bin/myplan -n`
 command Techlog :edit `~/projects/ideas/bin/techlog -n`
+command Weekly :edit `~/projects/ideas/bin/weekly -n`
 command Workplan :edit `~/projects/ideas/bin/workplan -n`
