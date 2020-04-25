@@ -5,6 +5,7 @@ set encoding=utf-8
 let g:snips_author = 'Andrey Hitrin'
 " vim-slime setup
 let g:slime_target = "tmux"
+let g:slime_default_config = { "socket_name": "default", "target_pane": "" }
 
 " Use tags from third-party libraries located in ~/src
 set tags=./tags,./TAGS,tags,TAGS,~/src/*/tags,/usr/include/tags
