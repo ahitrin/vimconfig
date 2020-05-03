@@ -11,10 +11,6 @@ let g:slime_dont_ask_default = 1
 " Use tags from third-party libraries located in ~/src
 set tags=./tags,./TAGS,tags,TAGS,~/src/*/tags,/usr/include/tags
 
-"Use pathogen to easily modify the runtime path to include all plugins under ~/.vim/bundle directory
-call pathogen#infect()
-call pathogen#helptags()
-
 " change mapleader from \ to ,
 " http://dailyvim.blogspot.com/2008/11/using-mapleader.html
 let mapleader=","
