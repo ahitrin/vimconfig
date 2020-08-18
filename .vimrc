@@ -53,9 +53,10 @@ set guioptions-=L   " remove left scrollbar in GVim
 set guioptions-=r   " remove right scrollbar in GVim
 set guioptions-=m   " remove menu in GVim
 set spelllang=ru_yo,en_us   " spellcheck: Russian with Ё, and English
+set belloff=all     " no *freaking* bells!
 
 if has('gui_running')
-    set guifont=Ubuntu\ Mono\ 11
+    set guifont=Hack\ 11
 endif
 colorscheme desert
 
