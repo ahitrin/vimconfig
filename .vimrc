@@ -68,7 +68,6 @@ filetype plugin on  " load filetype plugins
 
 " workaround: manually set up clojure filetype (why it is not auto loaded?)
 au BufRead,BufNewFile *.clj set filetype=clojure
-au BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
 
 set diffopt=vertical
 
