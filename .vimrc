@@ -103,3 +103,4 @@ command Monthly :edit `~/projects/ideas/bin/monthly -n`
 command Myplan :edit `~/projects/ideas/bin/myplan -n`
 command Weekly :edit `~/projects/ideas/bin/weekly -n`
 command Workplan :edit `~/projects/ideas/bin/workplan -n`
+command RndCard :edit `~/projects/ideas/bin/random-card`
