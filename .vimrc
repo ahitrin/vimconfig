@@ -104,3 +104,14 @@ command Myplan :edit `~/projects/ideas/bin/myplan -n`
 command Weekly :edit `~/projects/ideas/bin/weekly -n`
 command Workplan :edit `~/projects/ideas/bin/workplan -n`
 command RndCard :edit `~/projects/ideas/bin/random-card`
+
+function AdocLink()
+    let line=getline('.')
+    if strpart(line, 0, 10) ==# 'See:\slink:'
+        echo strpart(line, 10)
+    else
+        echo strpart(line, 0, 9)
+    endif
+endfunction
+
+nmap <leader>] :call AdocLink()<cr>
