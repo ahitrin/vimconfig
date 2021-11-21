@@ -108,13 +108,16 @@ command RndCard :edit `~/projects/ideas/bin/random-card`
 function AdocLink()
     let line = getline('.')
     if strpart(line, 0, 10) ==# 'See: link:'
-        echo strpart(line, 10)
+        " echo strpart(line, 10)
         let relative = substitute(strpart(line, 10), '\[.*', '', 'g')
-        echo relative
-        let this_one = expand('%')
-        echo this_one
-        let this_dir = substitute(this_one, '/', '!!', 'g')
-        echo this_dir
+        " echo relative
+        let this_file = expand('%')
+        " echo this_file
+        let new_file = fnameescape(substitute(this_file, '/[^/]*$', '/', '') . relative)
+        " echo new_file
+        if filereadable(new_file)
+            execute "edit " . new_file
+        endif
     endif
 endfunction
 
