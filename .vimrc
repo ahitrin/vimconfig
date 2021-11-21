@@ -113,10 +113,14 @@ function AdocLink()
         " echo relative
         let this_file = expand('%')
         " echo this_file
-        let new_file = fnameescape(substitute(this_file, '/[^/]*$', '/', '') . relative)
+        let new_file = substitute(this_file, '/[^/]*$', '/', '') . relative
         " echo new_file
-        if filereadable(new_file)
-            execute "edit " . new_file
+        let short_file = fnameescape(substitute(new_file, './\.\./', '', ''))
+        " echo short_file
+        if filereadable(short_file)
+            execute "edit " . short_file
+        else
+            echo "File not found: " . short_file
         endif
     endif
 endfunction
