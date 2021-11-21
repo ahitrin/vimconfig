@@ -106,11 +106,15 @@ command Workplan :edit `~/projects/ideas/bin/workplan -n`
 command RndCard :edit `~/projects/ideas/bin/random-card`
 
 function AdocLink()
-    let line=getline('.')
-    if strpart(line, 0, 10) ==# 'See:\slink:'
+    let line = getline('.')
+    if strpart(line, 0, 10) ==# 'See: link:'
         echo strpart(line, 10)
-    else
-        echo strpart(line, 0, 9)
+        let relative = substitute(strpart(line, 10), '\[.*', '', 'g')
+        echo relative
+        let this_one = expand('%')
+        echo this_one
+        let this_dir = substitute(this_one, '/', '!!', 'g')
+        echo this_dir
     endif
 endfunction
 
