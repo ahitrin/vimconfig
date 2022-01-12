@@ -58,6 +58,8 @@ set belloff=all     " no *freaking* bells!
 colorscheme desert
 if has('gui_running')
     set guifont=Hack\ 11
+    colorscheme solarized
+    set background=light
 endif
 
 set nobackup        " NO BACKUPS!!! (leave it in the 70's)
