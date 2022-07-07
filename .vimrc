@@ -126,4 +126,10 @@ function AdocLink()
     endif
 endfunction
 
+function Timestamp()
+    let ts = strftime("%Y-%m-%d %H:%M:%S %Z")
+    let line = "== " . ts
+    call append(line("1"), line)
+endfunction
+
 nmap <leader>] :call AdocLink()<cr>
