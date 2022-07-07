@@ -96,9 +96,16 @@ nmap <silent> ,/ :nohlsearch<CR>
 " call sudo to modify root's files after opening
 cmap w!! w !sudo tee % >/dev/null
 
+" Insert timestamp at the first line of the buffer
+function TimestampFirst()
+    let ts = strftime("%Y-%m-%d %H:%M:%S %Z")
+    let line = "== " . ts
+    call append(line("1"), line)
+endfunction
+
 " wrappers against my custom tools
-command Braindump :edit `~/projects/ideas/bin/braindump -n`
-command Develop :edit `~/projects/ideas/bin/devel-braindump -n`
+command Braindump :edit `~/projects/ideas/bin/braindump -n` | :call TimestampFirst()
+command Develop :edit `~/projects/ideas/bin/devel-braindump -n` | :call TimestampFirst()
 command Journal :edit `~/projects/ideas/bin/journal -n`
 command Monthly :edit `~/projects/ideas/bin/monthly -n`
 command Myplan :edit `~/projects/ideas/bin/myplan -n`
@@ -124,12 +131,6 @@ function AdocLink()
             echo "File not found: " . short_file
         endif
     endif
-endfunction
-
-function Timestamp()
-    let ts = strftime("%Y-%m-%d %H:%M:%S %Z")
-    let line = "== " . ts
-    call append(line("1"), line)
 endfunction
 
 nmap <leader>] :call AdocLink()<cr>
