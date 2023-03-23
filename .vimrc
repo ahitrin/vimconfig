@@ -117,13 +117,19 @@ function AdocLink()
     let line = getline('.')
     if strpart(line, 0, 10) ==# 'See: link:'
         " echo strpart(line, 10)
-        let relative = substitute(strpart(line, 10), '\[.*', '', 'g')
-        " echo relative
-        let this_file = expand('%')
-        " echo this_file
-        let new_file = substitute(this_file, '/[^/]*$', '/', '') . relative
-        " echo new_file
-        let short_file = trim(system("realpath " . new_file))
+        let target_subpath = substitute(strpart(line, 10), '\[.*', '', 'g')
+        " echo target_subpath
+        if strpart(target_subpath, 0, 1) ==# '/'
+            " absolute path
+            let short_file = target_subpath
+        else
+            " relative path
+            let this_file = expand('%')
+            " echo this_file
+            let new_file = substitute(this_file, '/[^/]*$', '/', '') . target_subpath
+            " echo new_file
+            let short_file = trim(system("realpath " . new_file))
+        endif
         " echo "|" . short_file . "|"
         if filereadable(short_file)
             execute "edit " . short_file
