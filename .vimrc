@@ -82,7 +82,6 @@ nnoremap ; :
 vmap Q gq
 nmap Q gqap
 " easy work with buffers
-nnoremap <silent> <F9> :BufExplorer<CR>
 nnoremap <silent> <F12> :bn<CR>
 nnoremap <silent> <S-F12> :bp<CR>
 " easy window navigation
