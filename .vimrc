@@ -1,6 +1,7 @@
 " see http://nvie.com/posts/how-i-boosted-my-vim/
 set nocompatible
 set encoding=utf-8
+set modelines=5
 " Set author's name for SnipMate plugin
 let g:snips_author = 'Andrey Hitrin'
 " vim-slime setup
