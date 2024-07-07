@@ -19,9 +19,6 @@ let mapleader=","
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
-" quickly save current buffer and return to edit
-nmap <leader>z :wa<CR>i
-
 set autoread        " reload changed file without askin'
 set hidden          " hide buffers insteade of close
 set wrap            " do wrap lines
