@@ -12,10 +12,6 @@ let g:slime_dont_ask_default = 1
 " Use tags from third-party libraries located in ~/src
 set tags=./tags,./TAGS,tags,TAGS,~/src/*/tags,/usr/include/tags
 
-" change mapleader from \ to ,
-" http://dailyvim.blogspot.com/2008/11/using-mapleader.html
-let mapleader=","
-
 " quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
