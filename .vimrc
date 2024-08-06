@@ -63,6 +63,8 @@ filetype plugin on  " load filetype plugins
 
 " workaround: manually set up clojure filetype (why it is not auto loaded?)
 au BufRead,BufNewFile *.clj set filetype=clojure
+" workaround: do not wrap long lines in log files
+au BufRead,BufNewFile *.log set nowrap
 
 set diffopt=vertical
 
